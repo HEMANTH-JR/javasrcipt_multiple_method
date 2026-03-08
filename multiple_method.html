@@ -1,0 +1,37 @@
+<html>
+<script>
+class Student {
+    constructor(mark1, mark2, mark3) {
+        this.mark1 = mark1;
+        this.mark2 = mark2;
+        this.mark3 = mark3;
+    }
+
+    printMarks() {
+        document.write("Mark 1: " + this.mark1 + "<br>");
+        document.write("Mark 2: " + this.mark2 + "<br>");
+        document.write("Mark 3: " + this.mark3 + "<br>");
+    }
+
+    findHighest() {
+
+        if (this.mark1 > this.mark2 && this.mark1 > this.mark3) {
+            document.write("Highest Mark: " + this.mark1 + "<br>");
+        }
+
+        else if (this.mark2 > this.mark1 && this.mark2 > this.mark3) {
+            document.write("Highest Mark: " + this.mark2 + "<br>");
+        }
+
+        else {
+            document.write("Highest Mark: " + this.mark3 + "<br>");
+        }
+    }
+}
+
+let s1 = new Student(85, 92, 78);
+
+s1.printMarks();     
+s1.findHighest();    
+</script>
+</html>
